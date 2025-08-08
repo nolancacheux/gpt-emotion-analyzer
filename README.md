@@ -1,80 +1,120 @@
-## myGPTEmotions - Nolan Cacheux
+# GPT-Emotion Analyzer
 
-<img src="/client/photos/explication1.JPG" alt="Explication"/>
-<img src="/client/photos/explication2.JPG" alt="Explication 2"/>
-<img src="/client/photos/explication4.JPG" alt="Explication 5"/>
-<img src="/client/photos/explication3.JPG" alt="Explication 3"/>
-<img src="/client/photos/explication5.JPG" alt="Explication 4 "/>
+<p align="center">
+  <img src="/client/photos/explication1.JPG" alt="App Screenshot 1" width="400"/>
+  <br/>
+  <em>Analyze emotions from photos and get personalized AI-driven recommendations.</em>
+</p>
 
-## Analyseur d'émotions et générateur de recommandations
+## About The Project
 
-Ce projet est une application web qui analyse les émotions des personnes sur les photos et génère des recommandations personnalisées basées sur ces émotions. Les utilisateurs peuvent télécharger des images ou prendre des photos à partir de leur webcam. L'application utilise un modèle d'intelligence artificielle pour détecter les visages et les émotions sur ces visages, puis communique avec l'API de ChatGPT (GPT-3.5-turbo) d'OpenAI pour générer des recommandations telles que des textes d'opinion, des suggestions de musique ou d'autres activités adaptées aux émotions de l'utilisateur.
+GPT-Emotion Analyzer is a web application that detects emotions from faces in photos and generates personalized recommendations based on the detected feelings. Users can upload images or capture photos directly from their webcam. The application uses an AI model for face and emotion detection and then communicates with OpenAI's ChatGPT API (gpt-3.5-turbo) to provide tailored suggestions, such as opinion pieces, music recommendations, or activities suited to the user's emotional state.
 
-## Table des matières
+### Key Features
 
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Fonctionnalités](#fonctionnalités)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+*   **Face & Emotion Detection:** Analyzes emotions from uploaded images or live webcam feed.
+*   **AI-Powered Recommendations:** Integrates with the ChatGPT API to generate personalized content.
+*   **Emotion Statistics:** Displays a breakdown of detected emotions with progress bars.
+*   **Daily Analysis:** Provides a personalized daily summary based on the user's emotions.
+*   **Custom Suggestions:** Offers music, activities, and other ideas tailored to your mood.
 
-## Technologies
+### Built With
 
-- Client :
-  - Vite
-  - HTML, CSS, JavaScript
-- Serveur :
-  - Node.js
-  - Express
-  - API OpenAI
+*   **Frontend:**
+    *   [Vite](https://vitejs.dev/)
+    *   HTML, CSS, JavaScript
+*   **Backend:**
+    *   [Node.js](https://nodejs.org/)
+    *   [Express](https://expressjs.com/)
+*   **APIs:**
+    *   [OpenAI API](https://openai.com/docs/api-reference/)
 
-## Installation
+---
 
-1. Clonez ce dépôt :
-- `git clone https://github.com/nolancacheux/NolanGPTEmotions.git`
+## Getting Started
 
-2. Accédez au dossier du projet :
-- `cd NolanGPTEmotions`
+Follow these instructions to set up and run the project locally.
 
-3. Installez les dépendances pour le client et le serveur :
+### Prerequisites
 
-- `cd client`
-- `npm install`
-- `cd ../server`
-- `npm install`
+*   [Node.js](https://nodejs.org/en/download/) (v14 or later)
+*   [npm](https://www.npmjs.com/get-npm)
+*   An OpenAI API key
 
-4. Créez un fichier .env dans le dossier server avec votre clé API OpenAI :
-- `OPEN_API_KEY="votre_clé_api_openai"`
+### Installation
 
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/nolancacheux/gpt-emotion-analyzer.git
+    cd gpt-emotion-analyzer
+    ```
 
-## Utilisation
+2.  **Install client dependencies:**
+    ```sh
+    cd client
+    npm install
+    ```
 
-1. Démarrez le serveur :
-- `cd server`
-- `npm run server`
+3.  **Install server dependencies:**
+    ```sh
+    cd ../server
+    npm install
+    ```
 
-2. Démarrez le client dans un autre terminal :
-- `cd client`
-- `npm run dev`
+4.  **Set up your environment variables:**
+    Create a `.env` file in the `server` directory and add your OpenAI API key:
+    ```env
+    OPENAI_API_KEY="your_openai_api_key_here"
+    ```
 
-3. Ouvrez votre navigateur et accédez à `http://localhost:5173`.
+### Running the Application
 
-Chargez une image ou prenez une photo avec votre webcam pour analyser les émotions et recevoir des recommandations personnalisées.
+1.  **Start the backend server:**
+    From the `server` directory, run:
+    ```sh
+    npm run server
+    ```
 
-## Fonctionnalités
+2.  **Start the frontend client:**
+    In a separate terminal, from the `client` directory, run:
+    ```sh
+    npm run dev
+    ```
 
-- Détection de visage et analyse des émotions à partir d'images ou de la webcam
-- Communication avec l'API de ChatGPT pour générer des recommandations personnalisées
-- Affichage des statistiques émotionnelles sous forme de barres de progression
-- Analyse quotidienne personnalisé basé sur les émotions de l'utilisateur
-- Suggestions de musique adaptées aux émotions de l'utilisateur
-- Propositions d'activités et d'idées basées sur les émotions de l'utilisateur
+3.  **Open the application:**
+    Open your browser and navigate to `http://localhost:5173`. You can now upload an image or use your webcam to start analyzing emotions!
 
-## Contribuer
+---
 
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+## Contributing
 
-## Licence
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Ce projet est sous licence ISC.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+Don't forget to give the project a star! Thanks again!
+
+## License
+
+Distributed under the ISC License. See `LICENSE` for more information.
+
+## Contact
+
+Nolan Cacheux - [@nolancacheux](https://github.com/nolancacheux)
+
+Project Link: [https://github.com/nolancacheux/gpt-emotion-analyzer](https://github.com/nolancacheux/gpt-emotion-analyzer)
+
+## Screenshots
+
+<p align="center">
+  <img src="/client/photos/explication2.JPG" alt="Explication 2" width="48%">
+  <img src="/client/photos/explication3.JPG" alt="Explication 3" width="48%">
+  <img src="/client/photos/explication4.JPG" alt="Explication 4" width="48%">
+  <img src="/client/photos/explication5.JPG" alt="Explication 5" width="48%">
+</p>
