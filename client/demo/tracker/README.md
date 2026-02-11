@@ -11,7 +11,7 @@
 - replace external lib:  
   > curl https://raw.githubusercontent.com/ubilabs/kd-tree-javascript/master/kdTree.js -o lib/kdTree-min.js
 - build with `esbuild`:  
-  > node_modules/.bin/esbuild --bundle tracker.js --format=esm --platform=browser --target=esnext --keep-names --tree-shaking=false --analyze --outfile=/home/vlado/dev/human/demo/tracker/tracker.js --banner:js="/* eslint-disable */"
+  > node_modules/.bin/esbuild –bundle tracker.js –format=esm –platform=browser –target=esnext –keep-names –tree-shaking=false –analyze –outfile=/home/vlado/dev/human/demo/tracker/tracker.js –banner:js="/* eslint-disable */"
 
 ### Usage
 
